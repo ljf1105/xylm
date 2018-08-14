@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="startBack">#00CCCC</color>
+    <color name="startBtBack">#006666</color>
+    <color name="startText">#89B9B9</color>
+    <color name="startYzBt">#4C8DF0</color>
+    <color name="labeText">#999999</color>
+    <color name="startHs">#e0e0e0</color>
+    <color name="startE2">#f24444</color>
+    <color name="whites">#fff</color>
+    <color name="shenLan">#095464</color>
+    <color name="qianLan">#009094</color>
+    <color name="qianbai">#F8F8F8</color>
+    <color name="backs">#3B3B3B</color>
+    <color name="qwhite">#EDEDED</color>
+    <color name="orange">#F2995B</color>
+    <color name="shencheng">#F35633</color>
+</resources>

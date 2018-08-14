@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.popo.xylm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+    请求访问使用照相设备
+    <uses-permission android:name="android.permission.CAMERA" />
+    -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/push"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.PerfectActivity" />
+        <activity android:name=".ui.activity.AgreementActivity" />
+        <activity android:name=".ui.activity.LabelActivity" />
+        <activity android:name=".ui.activity.BackActivity" />
+        <activity android:name=".ui.activity.ResetActivity" />
+        <activity android:name=".ui.activity.HomeActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.homeactivity.MessageActivity" />
+        <activity android:name=".ui.activity.child.YsDetailsActivity" />
+        <activity android:name=".ui.activity.child.InstallActivity" />
+        <activity android:name=".ui.activity.child.childs.OrderActivity" />
+        <activity android:name=".ui.activity.child.childs.FabulousActivity" />
+        <activity android:name=".ui.activity.child.childs.CommentActivity" />
+        <activity android:name=".ui.activity.child.childs.TaskActivity" />
+        <activity android:name=".ui.activity.child.childs.TeamActivity" />
+        <activity android:name=".ui.activity.child.childs.FollowActivity" />
+        <activity android:name=".ui.activity.child.childs.MineGzActivity" />
+        <activity android:name=".ui.activity.child.childs.MineFansActivity" />
+        <activity android:name=".ui.activity.homeactivity.FamousTeaActivity" />
+        <activity android:name=".ui.activity.child.childs.MshiXqActivity" />
+        <activity android:name=".ui.activity.homeactivity.XxhdActivity" />
+        <activity android:name=".ui.activity.homeactivity.KeChengActivity" />
+        <activity android:name=".ui.activity.homeactivity.PublishActivity" />
+        <activity android:name=".ui.activity.workActivity.WorkXQActivity" />
+        <activity android:name=".ui.activity.workActivity.TeacherXqActivity" />
+        <activity android:name=".ui.activity.mineactivity.PianHaoActivity" />
+        <activity android:name=".ui.activity.mineactivity.XiaoxiActivity" />
+        <activity android:name=".ui.activity.mineactivity.JiGouActivity" />
+        <activity android:name=".ui.activity.mineactivity.ZuoPinActivity" />
+        <activity android:name=".ui.activity.mineactivity.ShouCangActivity" />
+        <activity android:name=".ui.activity.mineactivity.WoDeQuanActivity" />
+        <activity android:name=".ui.activity.mineactivity.DingDanActivity" />
+        <activity android:name=".ui.activity.mineactivity.ChongZhiActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zz.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

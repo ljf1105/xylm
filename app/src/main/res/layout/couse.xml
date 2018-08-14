@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/couse_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/couse_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/couse_photo"
+            android:src="@mipmap/u1288" />
+
+        <TextView
+            android:id="@+id/couse_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/couse_intro"
+            android:layout_marginTop="3dp"
+            android:text="1111"
+            android:textColor="@color/whites" />
+
+        <TextView
+            android:id="@+id/couse_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/couse_photo"
+            android:text="1111"
+            android:textColor="@color/whites" />
+
+        <TextView
+            android:id="@+id/couse_zb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/couse_photo"
+            android:background="@color/shenLan"
+            android:textColor="@color/whites"
+            android:text="2222" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/couse_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="33333" />
+
+            <TextView
+                android:id="@+id/couse_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:text="33333" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/couse_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="33333" />
+
+        <TextView
+            android:id="@+id/couse_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="33333" />
+    </LinearLayout>
+
+</LinearLayout>

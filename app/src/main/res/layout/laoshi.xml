@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tacher_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/teacher_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tacher_photo"
+            android:src="@mipmap/u1288" />
+
+        <TextView
+            android:id="@+id/tacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1111"
+            android:layout_marginTop="3dp"
+            android:layout_above="@id/tacher_intro"
+            android:textColor="@color/whites" />
+
+        <TextView
+            android:id="@+id/tacher_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1111"
+            android:layout_alignBottom="@id/tacher_photo"
+            android:textColor="@color/whites" />
+    </RelativeLayout>
+
+</FrameLayout>
